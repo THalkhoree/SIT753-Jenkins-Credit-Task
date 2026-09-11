@@ -4,13 +4,15 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Starting the automated CI build from GitHub'
+                echo 'Task: Compile and package the application'
+                echo 'Tool: Maven'
             }
         }
 
-        stage('Test') {
+        stage('Unit and Integration Tests') {
             steps {
-                echo 'Running application tests'
+                echo 'Task: Run unit tests and integration tests'
+                echo 'Tools: JUnit and Selenium'
             }
         }
     }
