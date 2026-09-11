@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Starting the build stage from GitHub'
+                echo 'Starting the automated CI build from GitHub'
             }
         }
     }
